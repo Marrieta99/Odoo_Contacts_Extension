@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="segment_view_search" model="ir.ui.view">
+        <field name="name">segmento.search</field>
+        <field name="model">segmento</field>
+        <field name="arch" type="xml">
+            <search string="Search tags">
+                <field name="name" />
+            </search>
+        </field>
+    </record>
+
+    <record id="segment_view_form" model="ir.ui.view">
+        <field name="name">segmento.form</field>
+        <field name="model">segmento</field>
+        <field name="arch" type="xml">
+            <form string="nuevo segmento">
+                <sheet>
+                    <div class="oe_title">
+                        <label class="oe_edit_only" for="name" string="Segmento" />
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="segment_view_tree" model="ir.ui.view">
+        <field name="name">segmento.tree</field>
+        <field name="model">segmento</field>
+        <field name="arch" type="xml">
+            <tree string="Channel" default_order="name desc">
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="segmento_action" model="ir.actions.act_window">
+        <field name="name">Segmentos</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">segmento</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{"search_default_all":1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Crear un segmento
+            </p>
+            <p>
+                Identifica la categoria de una compañia por segmento
+            </p>
+        </field>
+    </record>
+
+    <menuitem
+        id="segment_menu"
+        name="Segmentos"
+        parent="contacts.res_partner_menu_config"
+        action="segmento_action"
+        sequence="4"
+    />
+
+</odoo>

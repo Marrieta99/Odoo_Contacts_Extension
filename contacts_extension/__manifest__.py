@@ -5,7 +5,7 @@
     "description": "Modulo de extensión de la gestión de contactos (empresas y personas)",
     "depends": ["base", "contacts"],
     "data": [
-        #"views/extra_attributes_views.xml",
+        "views/segment_views.xml",
         "security/ir.model.access.csv",
     ],
     "application": True,
