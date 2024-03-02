@@ -6,6 +6,7 @@
     "depends": ["base", "contacts"],
     "data": [
         "views/segment_views.xml",
+        "views/res_partner_views.xml",
         "security/ir.model.access.csv",
     ],
     "application": True,
