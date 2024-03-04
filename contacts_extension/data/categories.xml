@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="LIESA_roles_category" model="ir.module.category">
+            <field name="name">
+                Liesa Contacts Roles
+            </field>
+        </record>
+    </data>
+</odoo>

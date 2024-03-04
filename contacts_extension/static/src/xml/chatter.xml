@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-extend="mail.ChatterTopbar" t-name="mail.ChatterTopbar">
+        <t t-jquery="button.o_ChatterTopbar_buttonScheduleActivity" t-operation="replace">
+            <button class="btn btn-link o_ChatterTopbar_button o_ChatterTopbar_buttonScheduleActivity"
+                type="button"
+                t-att-disabled="chatter.isDisabled" t-on-click="chatter.onClickScheduleActivity"
+                title="Schedule a task" data-hotkey="shift+a">
+            <i class="fa fa-clock-o" />
+            Asdasd Task
+            </button>
+        </t>
+    </t>
+
+</templates>

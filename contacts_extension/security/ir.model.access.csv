@@ -1,2 +1,9 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-segmento_permissions,segmento access,model_segmento,base.group_user,1,1,1,1
+segmento_user,Segments basic management,model_segmento,LIESA_contacts_user,1,0,0,0
+segmento_admin,Segments advanved management,model_segmento,LIESA_contacts_admin,1,1,1,1
+
+contacts_user,Contacts basic managing,model_res_partner,LIESA_contacts_user,1,1,1,0
+contacts_admin,Contacts advanced managing,model_res_partner,LIESA_contacts_admin,1,1,1,1
+
+industry_user,Industry basic managing,base.model_res_partner_industry,LIESA_contacts_user,1,0,0,0
+industry_admin,Industry advanced managing,base.model_res_partner_industry,LIESA_contacts_admin,1,1,1,1

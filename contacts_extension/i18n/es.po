@@ -15218,7 +15218,7 @@ msgstr "Indonesia - Contabilidad"
 #. module: base
 #: model:ir.actions.act_window,name:base.res_partner_industry_action
 msgid "Industries"
-msgstr "Industrias"
+msgstr "Categorias"
 
 #. module: base
 #: model:ir.model,name:base.model_res_partner_industry

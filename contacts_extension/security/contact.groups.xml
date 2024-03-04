@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="res.groups" id="LIESA_contacts_admin">
+        <field name="name">Contacts admin</field>
+        <field name="category_id" eval="ref('contacts_extension.LIESA_roles_category')"></field>
+        <field name="implied_ids" eval="[ref('base.group_user')]"></field>
+    </record>
+    <record model="res.groups" id="LIESA_contacts_user">
+        <field name="name">Contacts user</field>
+        <field name="category_id" eval="ref('contacts_extension.LIESA_roles_category')"></field>
+        <field name="implied_ids" eval="[ref('base.group_user')]"></field>
+    </record>
+</odoo>
