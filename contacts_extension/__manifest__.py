@@ -13,16 +13,5 @@
     ],
     "application": True,
     "installable": True,
-    "assets": {
-        # "mail.assets_discuss_public": [
-        #     "contacts_extension/static/src/components/chatter_topbar/chatter_topbar.xml",
-        # ],
-        # "web.assets.backend": [
-        #     "contacts_extension/static/src/components/chatter_topbar/chatter_topbar.xml",
-        # ],
-        "web.assets_qweb": [
-            "contacts_extension/static/src/xml/chatter.xml",
-        ],
-    },
     "license": "LGPL-3",
 }
